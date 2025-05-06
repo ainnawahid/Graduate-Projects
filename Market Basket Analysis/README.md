@@ -24,13 +24,13 @@ __1. Cleaning the Data:__
 
 __2. Filtering Transactions:__
 
-Transactions containing more than one product were retained. This ensures meaningful associations could be extracted.
+- Transactions containing more than one product were retained. This ensures meaningful associations could be extracted.
 
 __3. Data Transformation:__
 
-A basket format was created where each row represents an invoice and each column represents a product.
+- A basket format was created where each row represents an invoice and each column represents a product.
 
-Binary encoding was used: '1' indicates the product is present in a transaction, and '0' means it is not.
+- Binary encoding was used: '1' indicates the product is present in a transaction, and '0' means it is not.
 
 __Association Rule Mining Using Apriori__
 
@@ -84,7 +84,7 @@ Interpretation
 
 The association rules show strong relationships between certain product pairs. For example, the lift values greater than 3 indicate that the occurrence of both products together is more than three times as likely than if they were independent. This suggests opportunities for cross-selling or promotional bundling.
 
-Business Recommendations
+### Business Recommendations
 
 Based on the association rules, the following actions are recommended:
 
