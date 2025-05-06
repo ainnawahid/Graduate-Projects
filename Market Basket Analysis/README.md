@@ -9,6 +9,21 @@ To identify frequent itemsets and generate association rules that reveal:
 - The strength and usefulness of those item relationships
 - Opportunities to improve business strategies such as bundling or shelf arrangement
 
+## Dataset Overview
+The dataset consists of 19,415 transactions and includes three columns:
+- Member_number: a unique ID for each customer,
+- Date: transaction date,
+- itemDescription: name of the purchased item.
+- There are a total of 164 unique items sold.
+
+Top 5 Most Frequently Purchased Items:
+- Whole milk – 957 times
+- Rolls/buns – 901 times
+- Soda – 863 times
+- Yogurt – 774 times
+
+Other vegetables – 752 times
+
 ## 3. Methodology
 
 ### Step 1: Data Preprocessing
