@@ -1,117 +1,79 @@
-Market Basket Analysis Using Apriori Algorithm
-This project analyzes daily transaction data from a retail store to identify item combinations frequently bought together. These insights help the store owner improve product placement and increase sales.
 
-📊 1. Exploratory Data Analysis (EDA)
-Dataset: 6,422 transactions with 1,811 unique invoices and 162 unique items.
+# Market Basket Analysis Using Apriori Algorithm
 
-Cleaned nulls and duplicates.
+## Introduction
 
-Top items by quantity: paper plates, mineral water, bread, eggs, tissue.
+This project applies Market Basket Analysis to uncover customer purchasing patterns from daily retail transaction data. By identifying items frequently bought together, the store can improve product placement strategies to boost sales and enhance customer experience.
 
-Most frequent items across invoices: mineral water (246), tissue (240), eggs (195).
+## Objectives
 
-🧹 2. Data Preparation
-Transactions were grouped by invoice.
+- To analyze transactional data and identify popular item combinations.
+- To generate actionable insights using Association Rule Mining.
+- To assist the store owner in strategic product placement for better sales outcomes.
 
-Items were encoded into a binary matrix (1 = purchased, 0 = not).
+## 1. Exploratory Data Analysis (EDA)
 
-Only items bought more than once were kept.
+A brief analysis was performed to understand the data structure:
 
-⚙️ 3. Methodology: Apriori Algorithm
-Apriori was used to find frequent itemsets and generate association rules.
+- Total transactions: 6,422  
+- Unique invoices: 1,811  
+- Unique items: 162  
 
-Support threshold: 0.001 (itemset must appear in ≥0.1% of transactions).
+Top items purchased by frequency and invoice count include:
+- **Mineral Water**: in 246 invoices  
+- **Tissue**: in 240 invoices  
+- **Eggs**: in 195 invoices  
 
-Confidence threshold: 0.04 (rule must hold in ≥4% of relevant transactions).
+Data cleaning included removal of missing values and duplicates.
 
-Lift threshold: 0.5 (higher = stronger association).
+## 2. Data Preparation
 
-Key Metrics:
+To perform association rule mining, the dataset was transformed into a binary matrix (one-hot encoded) where each row represents a transaction and each column represents an item. Each cell indicates whether an item was present in the transaction.
 
-Support: Frequency of itemset in all transactions.
+This transformation is necessary to allow the Apriori algorithm to evaluate item co-occurrences efficiently.
 
-Confidence: Likelihood of RHS given LHS.
+## 3. Methodology
 
-Lift: Strength of the rule vs random chance.
+The **Apriori algorithm** was used to identify frequent itemsets and generate association rules.
 
-✅ 4. Results and Interpretation
-From 6,422 transactions, the Apriori model produced 88 rules.
+- **Apriori** works by identifying frequent individual items, then extending them to larger itemsets if those combinations appear frequently enough.
+- Parameters set:
+  - **Minimum Support**: 0.001 (itemsets must appear in at least 0.1% of transactions)
+  - **Minimum Confidence**: 0.04
+  - **Minimum Lift**: 0.5
 
-Sample Rules:
-Bread → Eggs
+These thresholds help filter out weak or trivial rules and retain only strong, meaningful associations.
 
-Support: 0.0023
+### Rule Interpretation
 
-Confidence: 0.41
+- **Support**: how often an itemset appears in the data.
+- **Confidence**: the likelihood that item B is bought when item A is bought.
+- **Lift**: how much more likely B is purchased when A is purchased, compared to random chance.
 
-Lift: 2.19
+## 4. Results and Interpretation
 
-Customers who buy bread are 2.19 times more likely to buy eggs than random.
+A total of **92 rules** were generated. The top rules are summarized below:
 
-Tissue → Mineral Water
+| Antecedent     | Consequent     | Support | Confidence | Lift  |
+|----------------|----------------|---------|------------|-------|
+| Eggs           | Tissue         | 0.029   | 0.367      | 1.53  |
+| Paper plates   | Mineral water  | 0.028   | 0.364      | 1.36  |
+| Bread          | Eggs           | 0.025   | 0.325      | 1.45  |
 
-Support: 0.0022
+These rules suggest that:
+- Customers who buy **eggs** are 1.53 times more likely to also buy **tissue**.
+- **Paper plates** and **mineral water** are often purchased together, indicating potential grouping in shelf placement.
+- The association between **bread** and **eggs** is strong and may be considered in promotions or store layout.
 
-Confidence: 0.30
+## 5. Discussion and Recommendations
 
-Lift: 1.59
+The Apriori algorithm successfully identified significant item associations, supporting better inventory arrangement and marketing decisions. For instance:
 
-Indicates common co-purchase behavior.
+- Items frequently bought together should be placed closer on shelves.
+- Promotional bundles can be designed based on strong rules (e.g., eggs + tissue).
+- Further analysis could include seasonal trends or customer segmentation.
 
-Paper Plate & Tissue → Bread
-
-Support: 0.0012
-
-Confidence: 0.33
-
-Lift: 2.63
-
-Suggests a strong 3-item set for combo promotion.
-
-🧾 Tools Used
-Python (Pandas, MLxtend)
-
-Jupyter Notebook
-
-📝 Conclusion
-Apriori helped identify key product associations, such as bread and eggs or tissue and water. These findings provide actionable suggestions to group or promote items together, potentially improving store layout and increasing revenue.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+This project demonstrates how basic association rule mining can enhance retail decision-making with simple, interpretable insights.
 
 
 
