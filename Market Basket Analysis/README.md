@@ -14,25 +14,25 @@ The dataset used for this analysis contains transactional data from a retail sto
 
 #### Methodology
 
-_Data Preparation_
+__Data Preparation__
 
-Cleaning the Data:
+__1. Cleaning the Data:__
 
-All missing values were removed to ensure data integrity.
+- All missing values were removed to ensure data integrity.
 
-Transactions with a quantity less than or equal to zero were excluded since they do not represent actual sales.
+- Transactions with a quantity less than or equal to zero were excluded since they do not represent actual sales.
 
-Filtering Transactions:
+__2. Filtering Transactions:__
 
 Transactions containing more than one product were retained. This ensures meaningful associations could be extracted.
 
-Data Transformation:
+__3. Data Transformation:__
 
 A basket format was created where each row represents an invoice and each column represents a product.
 
 Binary encoding was used: '1' indicates the product is present in a transaction, and '0' means it is not.
 
-Association Rule Mining Using Apriori
+__Association Rule Mining Using Apriori__
 
 The Apriori algorithm was implemented with the following thresholds:
 
