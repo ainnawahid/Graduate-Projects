@@ -58,3 +58,8 @@ Here are selected rules from the analysis with the highest confidence values:
 - Filter rules using:
   ```python
   strong_rules = rules[(rules['confidence'] > 0.1) & (rules['lift'] > 1)]
+- Visualize results using scatter plots (support vs confidence) or network diagrams for better pattern recognition.
+- Consider business context as even low-confidence rules may be useful in niche promotions if they align with marketing goals.
+
+## 7. Conclusion
+While the Apriori algorithm successfully generated association rules from the dataset, the results indicate that most item pairings occur infrequently and lack strong associations. Further refinement, such as adjusting thresholds or exploring other algorithms (e.g., FP-Growth), may be needed to extract more meaningful insights.
