@@ -70,6 +70,7 @@ These rules suggest that:
 - The association between **bread** and **eggs** is strong and may be considered in promotions or store layout.
 
 ## 5. Discussion and Recommendations
+![image](https://github.com/user-attachments/assets/56dca6ce-c2a7-437e-9fdc-112d7f0720c7)
 
 The Apriori algorithm successfully identified significant item associations, supporting better inventory arrangement and marketing decisions. For instance:
 
