@@ -1,3 +1,124 @@
+Market Basket Analysis Using Apriori Algorithm
+This project analyzes daily transaction data from a retail store to identify item combinations frequently bought together. These insights help the store owner improve product placement and increase sales.
+
+📊 1. Exploratory Data Analysis (EDA)
+Dataset: 6,422 transactions with 1,811 unique invoices and 162 unique items.
+
+Cleaned nulls and duplicates.
+
+Top items by quantity: paper plates, mineral water, bread, eggs, tissue.
+
+Most frequent items across invoices: mineral water (246), tissue (240), eggs (195).
+
+🧹 2. Data Preparation
+Transactions were grouped by invoice.
+
+Items were encoded into a binary matrix (1 = purchased, 0 = not).
+
+Only items bought more than once were kept.
+
+⚙️ 3. Methodology: Apriori Algorithm
+Apriori was used to find frequent itemsets and generate association rules.
+
+Support threshold: 0.001 (itemset must appear in ≥0.1% of transactions).
+
+Confidence threshold: 0.04 (rule must hold in ≥4% of relevant transactions).
+
+Lift threshold: 0.5 (higher = stronger association).
+
+Key Metrics:
+
+Support: Frequency of itemset in all transactions.
+
+Confidence: Likelihood of RHS given LHS.
+
+Lift: Strength of the rule vs random chance.
+
+✅ 4. Results and Interpretation
+From 6,422 transactions, the Apriori model produced 88 rules.
+
+Sample Rules:
+Bread → Eggs
+
+Support: 0.0023
+
+Confidence: 0.41
+
+Lift: 2.19
+
+Customers who buy bread are 2.19 times more likely to buy eggs than random.
+
+Tissue → Mineral Water
+
+Support: 0.0022
+
+Confidence: 0.30
+
+Lift: 1.59
+
+Indicates common co-purchase behavior.
+
+Paper Plate & Tissue → Bread
+
+Support: 0.0012
+
+Confidence: 0.33
+
+Lift: 2.63
+
+Suggests a strong 3-item set for combo promotion.
+
+🧾 Tools Used
+Python (Pandas, MLxtend)
+
+Jupyter Notebook
+
+📝 Conclusion
+Apriori helped identify key product associations, such as bread and eggs or tissue and water. These findings provide actionable suggestions to group or promote items together, potentially improving store layout and increasing revenue.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # Association Rule Mining for Retail Transactions
 
 ### Introduction
