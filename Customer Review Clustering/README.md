@@ -79,21 +79,6 @@ Gaussian Mixture Model (GMM)
 - Visualizes customer spending patterns within each cluster.
 - Highlights flexibility in cluster shape interpretation.
 
-## 📷 Suggested Visual Snippets
-
-You may include up to 10 visuals in the GitHub README. Here are the most informative:
-
-1. **Category Distribution** (bar plot)
-2. **Review Length Distribution** (histogram)
-3. **Word Cloud** of frequent terms
-4. **Elbow & Silhouette Graphs** for K-Means
-5. **K-Means Cluster Visualization (2D PCA)**
-6. **Silhouette Plot for K-Means**
-7. **Hierarchical Dendrogram**
-8. **Hierarchical Cluster Assignment Plot**
-9. **Cluster-wise Review Themes Table**
-10. **GMM Cluster Plot with Probabilities**
-
 ## Conclusion
 
 This project demonstrates the power of clustering in text mining, allowing Amazon to segment reviews without labeled data. The findings can support:
