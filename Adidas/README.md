@@ -1,10 +1,10 @@
 # Adidas Sales Performance Dashboard (2020–2021)
 
-## 📊 Overview
+## Overview
 
 This project delivers a comprehensive Power BI dashboard that analyzes Adidas' sales data across the United States from 2020 to 2021. The aim is to help stakeholders identify trends, evaluate profitability, and make informed decisions based on interactive and visual insights.
 
-## 🧩 Business Problem
+## Business Problem
 
 Adidas faced challenges in efficiently monitoring and analyzing sales performance due to a lack of centralized visualization tools. This limited their ability to:
 - Identify key sales trends and regional performance
@@ -13,7 +13,7 @@ Adidas faced challenges in efficiently monitoring and analyzing sales performanc
 
 A Power BI dashboard was developed to overcome these challenges, offering data-driven insights into sales strategies, marketing effectiveness, and resource planning.
 
-## 🎯 Objectives
+## Objectives
 
 The key objectives of this dashboard project include:
 - Analyzing sales by region, state, and product category
@@ -21,7 +21,7 @@ The key objectives of this dashboard project include:
 - Evaluating pricing strategies and product-level profitability
 - Forecasting sales and profit for the next six months
 
-## 📁 Data Description
+## Data Description
 
 The primary dataset was sourced from Kaggle and includes:
 - 9,648 rows and 13 columns
@@ -36,14 +36,14 @@ Data cleaning was conducted using Python (Pandas), ensuring integrity through:
 - Removing duplicates
 - Standardizing formats
 
-## 🛠️ Tools and Techniques
+## Tools and Techniques
 
 - **Power BI** for interactive dashboard design
 - **Python (Pandas)** for data cleaning and preprocessing
 - **Descriptive and Predictive Analytics**
 - **Time Series Forecasting** for future sales and profit projections
 
-## 📌 Dashboard Highlights
+## Dashboard Highlights
 
 Three interactive dashboards were built:
 1. **Sales Report** – Regional and product-level sales performance
@@ -55,7 +55,7 @@ Three interactive dashboards were built:
 3. **Forecast Dashboard** – Sales and profit predictions using historical data
    ![image](https://github.com/user-attachments/assets/3c1845a4-ccbf-4b0c-8478-cc98b9108ba0)
 
-## 🧠 Key Insights
+## Key Insights
 
 - The **West region** outperformed all others in total sales.
 - **Men’s street footwear** was the highest-selling and most profitable product category.
@@ -64,7 +64,7 @@ Three interactive dashboards were built:
 - Cities like **Charleston** showed exceptional profitability potential.
 - Population density correlated positively with profit potential.
 
-## 📌 Stakeholder Impact
+## Stakeholder Impact
 
 The dashboard provides tailored insights for:
 - Sales teams: to focus efforts on top regions and channels
@@ -72,8 +72,6 @@ The dashboard provides tailored insights for:
 - Executives: to guide forecasting and resource allocation
 - Regional managers: to identify market expansion opportunities
 
-## 🧾 Conclusion
+## Conclusion
 
 This project highlights how business intelligence can transform raw sales data into strategic value. The Power BI dashboard equips Adidas stakeholders with a data-driven tool to support better decisions, drive growth, and stay competitive in the US market.
-
-
