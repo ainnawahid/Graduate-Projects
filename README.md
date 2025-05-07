@@ -1,2 +1,1 @@
-### Data Science and Analysis Portfolio – Ainna Wahid
-This portfolio showcases a collection of data science and data analysis projects completed through academic coursework, self-directed learning, and personal interest. It is updated regularly to reflect ongoing progress and newly acquired skills.
+Compilation of projects during my graduate study in Master of Data Science (2023-2024) at University of Technology Malaysia
