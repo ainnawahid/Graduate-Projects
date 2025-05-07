@@ -18,6 +18,10 @@ This project applies unsupervised learning techniques—**K-Means**, **Hierarchi
   - `category`
   - `discounted_price`
   - `review_content`
+![image](https://github.com/user-attachments/assets/aa7e6c27-2c8e-4be0-bd00-4838d77595c2)
+![image](https://github.com/user-attachments/assets/7f1d302e-5403-4ee2-abf2-2b098159dc6a)
+![image](https://github.com/user-attachments/assets/c814e96b-d9ee-468d-9b90-ac9d22088ff2)
+
 
 ### Preprocessing Steps
 
@@ -43,6 +47,15 @@ This project applies unsupervised learning techniques—**K-Means**, **Hierarchi
 | K-Means      | 3                | **0.5773**       |
 | Hierarchical | 3                | 0.5543           |
 | GMM          | 3                | 0.4923           |
+
+![image](https://github.com/user-attachments/assets/c49f2509-adcd-48bb-86f0-3e17040d4a0f)
+K-Means Clustering
+
+![image](https://github.com/user-attachments/assets/898737d6-412d-4534-9b3c-62dd591785dd)
+Hierarchical Clustering
+
+![image](https://github.com/user-attachments/assets/2dde0754-d18b-45a6-99bb-c357851ad0ab)
+Gaussian Mixture Model (GMM)
 
 - **K-Means** delivered the best cluster separation and cohesion.
 - All models consistently identified **3 optimal clusters**, indicating stable underlying patterns.
