@@ -6,7 +6,7 @@ This project explores key demographic and health trends in Malaysia using multip
 
 ## Datasets Used
 
-Four datasets were analyzed:
+Four datasets sourced from OpenDOSM were analyzed:
 
 1. **Life Expectancy at Birth by Ethnic Group and Sex**  
    - Contains yearly average life expectancy segmented by sex and ethnic group.
@@ -52,14 +52,9 @@ The project addresses various questions, including:
 - **Life Expectancy** varies across ethnic groups, with some disparities evident over time.
 - The **population is aging**, as shown by shifts in the age group distributions.
 - **Crude birth rate and fertility rate** are positively correlated.
-- Predictive models provided moderately accurate forecasts of fertility rates up to 2030.
-
-## Forecast Example
-
-Using Random Forest Regression, the forecasted **Total Fertility Rate** for the year **2030** was derived, helping project future population dynamics under current conditions.
+- Predictive models provided forecasts of fertility rates up to 2030.
 
 ## Conclusion
 
 This analysis provides a comprehensive overview of Malaysia’s population and health trends using open data. It highlights the importance of continuous demographic monitoring and supports evidence-based planning. Predictive models offer a foundation for more advanced forecasting and can assist in evaluating policy impacts.
-
 
