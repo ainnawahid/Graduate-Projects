@@ -1,8 +1,8 @@
-# Adidas Sales Performance Dashboard (2020–2021)
+# Sales Performance Dashboard (2020–2021)
 
 ## Overview
 
-This project delivers a comprehensive Power BI dashboard that analyzes Adidas' sales data across the United States from 2020 to 2021. The aim is to help stakeholders identify trends, evaluate profitability, and make informed decisions based on interactive and visual insights.
+This project delivers a comprehensive Power BI dashboard that analyzes Adidas' sales data across the United States from 2020 to 2021 (Kaggle). The aim is to help stakeholders identify trends, evaluate profitability, and make informed decisions based on interactive and visual insights.
 
 ## Business Problem
 
