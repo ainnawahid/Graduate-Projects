@@ -1,4 +1,4 @@
-# Sales Performance Dashboard (2020–2021)
+# Sales Performance Dashboard
 
 ## Overview
 
